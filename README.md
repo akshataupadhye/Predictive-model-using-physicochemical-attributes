@@ -97,7 +97,7 @@ Now I will move on to train a SVC with the best parameters to make predictions f
 ### Final model
 I have learnt a SVC model that predicts the quality of wine with the best set of parameters. The model can predict the quality of wine with an accuracy score of 0.8357.  
 
- - The model predictions are saved into a csv file.
+ - The code is designed to save the model predictions into a csv file.
 
 ## Conclusion
 In this project I have performed an EDA on the  wine quality dataset, performed data cleaning, outlier detection, variable encoding, data standardization, model testing, parameter tuning and model building for predicting the quality of wine along with lucid visualizations to better understand the data and results.
