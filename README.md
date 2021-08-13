@@ -72,7 +72,7 @@ For the data cleaning and preprocessing I examined and  implemented the followin
 I have tried various classifiers and logistic regression on this dataset. I have evaluated the performance of these models based on the predictions made by each model with the F1 score. To understand if the results of our experiments are valid and to ensure a fair comparison for all the models I have used k-fold Cross Validation strategy. 
 
 The models tested are:
-| Model Name | Avg. Accuracy Score |
+| Model Name | Avg. F1 Score |
 |--|--|
 |  SVC| 0.788345 |
 |  Random Forest Classifier| 0.812210 |
