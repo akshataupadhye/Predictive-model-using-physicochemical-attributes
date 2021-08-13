@@ -95,7 +95,7 @@ After testing for various combinations of parameters the best set of parameters 
 Now I will move on to train a SVC with the best parameters to make predictions for the quality of wine.
 #
 ### Final model
-I have learnt a SVC model that predicts the quality of wine with the best set of parameters. The model can predict the quality of wine with an accuracy score of 0.8357.  
+I have trained a SVC model that predicts the quality of wine with the best set of parameters. The model can predict the quality of wine with an accuracy score of 0.8357.  
 
  - The code is designed to save the model predictions into a csv file.
 
