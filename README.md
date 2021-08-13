@@ -86,7 +86,7 @@ Let us take a look at the visualization to better understand the performance of 
 ![enter image description here](https://raw.githubusercontent.com/akshataupadhye/Wine-Quality-Prediction/main/Images/Models_Performance.png)
 
 
-From the above plot and the mean F1 scores I can conclude that the k-nearest neighbors classifier is working the best in most of the n-fold results. Hence we will fine tune the KNN classifier for achieving better predictions.
+From the above plot and the F1 scores I can conclude that the k-nearest neighbors classifier is working the best in most of the n-fold results. Hence we will fine tune the KNN classifier for achieving better predictions.
 #
 ### Fine Tuning the best model
 
