@@ -64,38 +64,38 @@ Now that we have gained the understanding about the attributes and the target va
 For the data cleaning and preprocessing I examined and  implemented the following steps:
 
  1. The duplicate records were removed.
- 2.  The outliers were removed. 
+ 2. The outliers were removed. 
  3. The dataset attributes were standardized.  
  4. The target variable was encoded.
 
 ## Modeling the dataset to predict the quality of wine
-I have tried various classifiers and logistic regression on this dataset. I have evaluated the performance of these models based on the number of accurate predictions the model has made i.e. the accuracy score. To understand if the results of our experiments are valid ensure a fair comparison for all the models I have used k-fold Cross Validation strategy. 
+I have tried various classifiers and logistic regression on this dataset. I have evaluated the performance of these models based on the predictions made by each model with the F1 score. To understand if the results of our experiments are valid and to ensure a fair comparison for all the models I have used k-fold Cross Validation strategy. 
 
 The models tested are:
 | Model Name | Avg. Accuracy Score |
 |--|--|
-|  SVC| 0.835409 |
-|  Random Forest Classifier| 0.833756 |
-|  Decision Tree| 0.773960 |
-|  KNN Classifier| 0.829810 |
-|  AdaBoost Classifier|0.819965 |
-|  Logistic Regression| 0.828186 |
+|  SVC| 0.788345 |
+|  Random Forest Classifier| 0.812210 |
+|  Decision Tree| 0.775633 |
+|  KNN Classifier| 0.813694 |
+|  AdaBoost Classifier|0.799841 |
+|  Logistic Regression| 0.793923 |
 
 Let us take a look at the visualization to better understand the performance of each model.
 
-![enter image description here](https://raw.githubusercontent.com/akshataupadhye/Wine-Quality-Prediction/main/Images/Models_Accuracy.png)
+![enter image description here](https://raw.githubusercontent.com/akshataupadhye/Wine-Quality-Prediction/main/Images/Models_Performance.png)
 
 
-From the above plot and the mean accuracy scores I can conclude that the Support Vector Machine based classifier is working the best in most of the n-fold results. Hence we will fine tune the SVC model for achieving better predictions.
+From the above plot and the mean F1 scores I can conclude that the k-nearest neighbors classifier is working the best in most of the n-fold results. Hence we will fine tune the KNN classifier for achieving better predictions.
 #
 ### Fine Tuning the best model
 
-I will be testing various combinations of the parameters 'C', 'kernel' and the 'gamma' and for different values to get the best set of parameters. And again I will be using the k-fold Cross Validation strategy to ensure the validity of results of the experiments.
-After testing for various combinations of parameters the best set of parameters were found to be : {'C': 1.4, 'gamma': 0.1, 'kernel': 'rbf'}
-Now I will move on to train a SVC with the best parameters to make predictions for the quality of wine.
+I will be testing various combinations of the parameters 'algorithm', 'metric' and the 'n_neighbors' and for different values to get the best set of parameters. And again I will be using the k-fold Cross Validation strategy to ensure the validity of results of the experiments.
+After testing for various combinations of parameters the best set of parameters were found to be : {'algorithm': 'ball_tree', 'metric': 'manhattan', 'n_neighbors': 3}
+Now I will move on to train a KNN classifier with the best parameters to make predictions for the quality of wine.
 #
 ### Final model
-I have trained a SVC model that predicts the quality of wine with the best set of parameters. The model can predict the quality of wine with an accuracy score of 0.8357.  
+I have trained a KNN classifier that predicts the quality of wine with the best set of parameters. The model can predict the quality of wine with an accuracy score of 0.8136.  
 
  - The code is designed to save the model predictions into a csv file.
 
