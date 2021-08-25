@@ -95,7 +95,7 @@ After testing for various combinations of parameters the best set of parameters 
 Now I will move on to train a KNN classifier with the best parameters to make predictions for the quality of wine.
 #
 ### Final model
-I have trained a KNN classifier that predicts the quality of wine with the best set of parameters. The model can predict the quality of wine with an accuracy score of 0.8136.  
+I have trained a KNN classifier that predicts the quality of wine with the best set of parameters. The model can predict the quality of wine with an accuracy score of 0.8136 which is a 30% improvement over our baseline linear regression model. 
 
  - The code is designed to save the model predictions into a csv file.
 
