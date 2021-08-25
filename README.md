@@ -1,7 +1,7 @@
 # How to predict the quality of Wine ?
 
 ## Understanding the problem
-The wine industry is considered to be a significant business sector and wine tasting has been a popular trend since the ancient times for the evaluation and examination of wine. The quality of wine depends on the type and proportion of the ingredients of wine.  
+The wine industry is considered to be a significant business sector and wine tasting has been a popular trend since the ancient times for the evaluation and examination of wine. The quality of wine depends on the type and proportion of the ingredients of wine.  Hence it is useful for the wine industry to design inexpensive automated tools to predict the quality of wine.
 In this project I will be using the [Wine Quality Data Set](https://archive.ics.uci.edu/ml/datasets/wine+quality) which contains about 5000 instances of white wine with 11 attributes  based on physicochemical tests. I will be examining these attributes and  their relationship to the quality of wine. Based on the relationship of the attributes I will be developing a ML model which can be used to evaluate and predict of the wine instances.
 So the goal of this project is to design a data mining technique as an additional support to the wine tasting and help improve the production of wine.
 
