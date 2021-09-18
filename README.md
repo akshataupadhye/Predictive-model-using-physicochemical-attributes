@@ -13,7 +13,7 @@ The following was discovered in the EDA process:
  2.  All the attributes are numerical.
  3. There are about 937 duplicate records.
  4. The 'quality' of wine ranges from 3 to 9.
- 5. A few instances of outliers were found.
+ 5. A few instances of outliers were found using the 1.5(IQR) rule.
 
 *Let us take a look at the target variable "Quality"*
 ![enter image description here](https://raw.githubusercontent.com/akshataupadhye/Wine-Quality-Prediction/main/Images/histogram_boxplot_target.png) 
